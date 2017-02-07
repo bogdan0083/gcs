@@ -1,0 +1,34 @@
++font('Pragmatica', 'prgbook', 400, normal)
++font('Pragmatica', 'prgbookitalic', 400, italic)
++font('Pragmatica', 'prgbold', 700, normal)
++font('Pragmatica', 'prgbolditalic', 700, italic)
++font('Futuris', 'FuturisCyrillic', 400, normal)
+html
+	box-sizing: border-box
+
+*, *:before, *:after
+	box-sizing: inherit
+
+body
+	background: #FFF
+	line-height: 1.25
+	font-size: 14px
+	font-family: 'Pragmatica', Arial, sans-serif
+	font-weight: 400
+
+a
+	color: gray
+
+.container
+	padding: 0 10px
+	position: relative
+	max-width: 880px
+	width: 100%
+	margin: 0 auto
+	+rmin(800)
+		max-width: 1008px
+		padding: 0 15px
+		+clr()
+
+.color-blue
+	color $blue-dark

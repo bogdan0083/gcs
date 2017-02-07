@@ -1,0 +1,263 @@
+
+// VARIABLES
+$blue: #38d9d6
+$blue-dark: #00b3be
+
+.block
+	display: flex
+
+// HEADER
+.header
+	background-color: rgba(0, 0, 0, 0.36)
+	text-align: center
+	padding: 10px 0
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 200
+	a
+		color: white
+		font-size: 14px
+		text-decoration: none
+		text-transform: uppercase
+	+rmin(800)
+		position: fixed
+		height: 94px
+		padding: 0
+		.header-aside
+			float: right
+		.logo
+			float: left
+			line-height: 94px
+			height: 94px
+			position: relative
+			img
+				position: absolute
+				margin: auto
+				top: 0
+				left: 0
+				bottom: 0
+				right: 0
+.nav-main
+	display: none
+	a
+		display: inline-block
+		padding: 5px
+		transition: opacity 0.2s
+		+futuris()
+	+rmin(800)
+		display: inline-block !important
+		height: 94px
+		line-height: 94px
+		a
+			padding: 0 9px
+			&.js-transparent
+				opacity: 0.4
+.toggle-lang
+	margin-top: 5px
+	+futuris()
+	+rmin(800)
+		display: inline-block
+		margin-top: 0
+	a
+		margin: 0 2px
+		+rmin(800)
+			&:last-child
+				margin-right: 0
+		&.active
+			color: $blue
+			pointer-events: none
+
+.nav-trigger-wrap
+	display: block
+	margin: 10px 0
+	padding: 2px 0
+	+rmin(800)
+		display: none
+
+.nav-trigger
+	margin: 0 auto
+	+burger(30px, 4px, 6px, white)
+	&.js-active
+		+burger-to-cross()
+// PROMO
+.promo
+	//background-color: #232323
+	color: white
+	padding-top: 140px
+	padding-bottom: 30px
+	text-align: center	
+	h1
+		text-transform: uppercase
+		font-size: 24px
+		line-height: 1.4
+		+rmin(800)
+			font-size: 40px
+			width: 300px
+			margin-bottom: 60px
+		+futuris()
+		span
+			color: $blue
+	p
+		line-height: 1.4
+		max-width: 400px
+		margin: 0 auto
+		+rmin(800)
+			font-size: 18px
+			line-height: 1.5
+			width: 284px
+			margin: 0
+	.woman-img
+		display: none
+	+rmin(800)
+		height: 651px
+		text-align: left
+		overflow: hidden
+		padding-top: 0
+		&-left
+			float: left
+			padding-top: 150px
+		&-right
+			float: right
+			position: relative
+			.gcs-slogan
+				position: absolute
+				right: 40px
+				top: 230px
+		.woman-img
+			display: block
+	+rmin(1030)
+		&-right
+			.gcs-slogan
+				right: -40px		
+
+
+// welcome
+
+.welcome
+	&-top
+		color: white 
+		background-color: #00b3be
+		h2
+			margin: 0
+			text-align: center
+			font-weight: 400
+			text-transform: uppercase
+			padding: 25px 0
+			max-width: 290px
+			margin: 0 auto
+			+rmin(800)
+				max-width: 100%
+			strong
+				font-weight: 700
+	&-block
+		max-width: 400px
+		margin: 40px auto
+		p
+			color: #8e9191
+			line-height: 1.4
+		+rmin(800)
+			max-width: 380px
+			float: left
+			&:last-child
+				float: right
+		h3
+			font-weight: 400
+			text-transform: uppercase
+			font-size: 26px
+			margin: 0
+			padding-top: 4px
+			span
+				color: $blue
+				display: block
+		&-top
+			position: relative
+			padding-left: 100px
+			height: 80px
+			img
+				position: absolute
+				left: 0
+
+
+// projects
+.projects
+	text-align: center
+	h3
+		font-size: 26px
+		text-transform: uppercase
+		font-weight: 400
+		span
+			color: $blue-dark
+	&-filter
+		text-align: center
+		margin-bottom: 30px
+		&-list
+			padding: 0
+			margin: 0
+			list-style: none
+			li
+				display: inline-block
+				margin: 4px 2px
+			a
+				display: inline-block
+				text-decoration: none
+				padding: 6px 10px
+				border-radius: 4px
+				background-color: #eaedf0
+				transition: all 0.3s
+				&.js-active, &:hover
+					background-color: #00b3be
+					color: white
+
+.projects-gallery
+	+clr()
+
+.projects-item
+	width: 50%
+	float: left
+	position: relative
+	overflow: hidden
+	height: 0
+	padding-bottom: 33%
+	display: block
+	&:hover
+		.overlay
+			opacity: 1
+	+rmin(800)
+		width: 20%
+		padding-bottom: 13.5%
+	img
+		display: block
+		width: 100%
+		position: absolute
+		left: 0
+		top: 0
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(#394a58, 0.78)
+		opacity: 0
+		transition: all 0.3s
+		color: white
+		display: table
+		&-body
+			display: table-cell
+			vertical-align: middle
+		h4
+			font-weight: 400
+			font-size: 18px
+			margin: 0
+		p
+			font-size: 13px
+			margin: 0	
+		span
+			border: 1px solid #ffffff;
+			background-color: rgba(255, 255, 255, 0);
+			display: inline-block
+			padding: 4px 16px 5px
+			border-radius: 20px
+			margin-top: 10px

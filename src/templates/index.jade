@@ -1,0 +1,274 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+	// start PROMO
+	section.promo(data-parallax="scroll" data-image-src="img/promo-bg.jpg")
+		.container
+			.promo-left
+				h1 Наши возможности #[span бесконечны]
+				p Стирая границы возможного, мы открываем для Вас неизведанные горизонты: удивительные события, незабываемые впечатления, новые города и страны…
+
+			.promo-right
+				span.gcs-slogan gcs взгляни на мир по-новому
+				img.woman-img(src="img/woman.png")
+	// end PROMO
+	// start WELCOME
+	section.welcome
+		.welcome-top
+			h2 welcome to #[strong GCS] business group
+		.container
+			.welcome-block
+				.welcome-block-top
+					img(src="img/globe.svg" width="74" height="74")
+					h3 #[span Mice] Департамент
+				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
+			.welcome-block
+				.welcome-block-top
+					img(src="img/people-blue.svg" width="80" height="78")
+					h3 #[span Event] Департамент
+				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
+	// end WELCOME
+	// start PROJECTS
+	section.projects
+		h3 Наши #[span проекты]
+		// start PROJECTS FILTER
+		.projects-filter
+			.container
+				ul.projects-filter-list
+					li: a.js-active(href="#" data-category="all") Все
+					li: a(href="#" data-category="1") Корпоративные мероприятия
+					li: a(href="#" data-category="2") Тибилдинги
+					li: a(href="#" data-category="3") Юбилеи компании
+					li: a(href="#" data-category="4") Презентации
+					li: a(href="#" data-category="5") Детские праздники
+					li: a(href="#" data-category="6") Выездные конференции
+					li: a(href="#" data-category="7") Семинары
+					li: a(href="#" data-category="8") Инсентив поездки
+		// end PROJECTS FILTER
+		// start PROJECTS GALLERY		
+		.projects-gallery
+			a.projects-item(href="#")
+				img(src="img/gallery-item1.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item2.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item3.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item4.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item5.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее					
+			a.projects-item(href="#")
+				img(src="img/gallery-item1.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item2.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item3.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item4.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item(href="#")
+				img(src="img/gallery-item5.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее				
+		// end PROJECTS GALLERY
+	// end PROJECTS
+	// start FEATURES
+	section.features
+		h2 #[span 12 лет] успешной работы
+		.container
+			.features-group
+				.feature
+					.feature-icon
+						img(src="img/graph.svg")
+					.feature-count 12
+					p лет на рынке услуг
+				.feature
+					.feature-icon
+						img(src="img/graph.svg")
+					.feature-count 2000
+					p и более проектов по всему миру
+				.feature
+					.feature-icon
+						img(src="img/graph.svg")
+					.feature-count 25 000
+					p человек на одном мероприятии
+				.feature
+					.feature-icon
+						img(src="img/graph.svg")
+					.feature-count 50
+					p стран, где мы работаем
+				.feature
+					.feature-icon
+						img(src="img/graph.svg")
+					.feature-count 30
+					p договоров на годовое обслуживание			
+	// end FEATURES
+	// start mice department
+	section.mice-department
+		.container
+			h2 #[span Mice] департамент
+			.mice-group
+				img(src="img/globe-big.svg")
+				.mice-group-left
+					.mice-block
+						img(src="img/map.svg")
+						h4 Деловые мероприятия в России
+						p text
+					.mice-block
+						img(src="img/globe-small.svg")
+						h4 Деловые мероприятия в России
+						p text
+				.mice-group-right
+					.mice-block
+						img(src="img/heart.svg")
+						h4 Интенсив поездки
+						p text
+					.mice-block
+						img(src="img/prize.svg")
+						h4 Наши награды
+						p text
+	// end mice department
+	// start event department
+	.event-department
+		.container
+			h2 #[span Event] департамент
+			.event-advantages
+				.event-advantage
+					img(src="img/people.svg")
+					h3 25 000
+					p человек на одном мероприятии
+				.event-advantage
+					img(src="img/bag.svg")
+					h3 2000
+					p Реализованных проектов
+			.events
+				.single-event
+					.icon
+						img(src="img/teambuilding.svg")
+					p тимбилдинги		
+				.single-event
+					.icon
+						img(src="img/teambuilding.svg")
+					p Корпоративные мероприятия
+				.single-event
+					.icon
+						img(src="img/teambuilding.svg")
+					p Юбилеи компаний
+				.single-event
+					.icon
+						img(src="img/teambuilding.svg")
+					p Презентации
+				.single-event
+					.icon
+						img(src="img/teambuilding.svg")
+					p Детские мероприятия		
+	// end event department
+	// start NEWS
+	section.news
+		.container
+			h3 Новости
+			p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
+			.news-group
+				.news-item
+					.news-item-slider
+						.slide(style="background: url(img/news.jpg) no-repeat center / cover")
+						.slide(style="background: url(img/news.jpg) no-repeat center / cover")
+					h4 Lorem ipsum dolor sit ameе
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
+					a.btn Подробнее
+	// end NEWS
+	// start CLIENTS
+	section.clients
+		.container
+			h3 Нам доверяют
+			img.clients-brands(src="img/infinity-brands.png")
+	// end CLIENTS
+	// start CONTACT
+	section.contact
+		.contact
+			.contact-left
+				a.logo
+					img(src="img/logo.svg")
+				nav.links
+					a MICE
+					a EVENT
+					a Корпоративные мероприятия
+					a Юбилеи компании
+					a Тимбилдинги
+					a Детские праздники
+					a Семинары
+					a Презентации
+					a Выездные конференции
+					a Инсентив поездки
+		.contact-right
+			img(src="images/paperplane.svg")
+			h3 Наши контакты
+			.contact-block Б. Дровяной пер., д. 20 стр. 2, Москва, Россия, 109004
+			.contact-block тел: +7 (495) 662-12-23 #[br] +7 (495) 662-12-24
+			.contact-block e-mail: sales@gcs-business.ru
+			.socials
+				a.social-icon(href="#")
+					img(src="img/vk.svg")
+				a.social-icon(href="#")
+					img(src="img/fb.svg")
+				a.social-icon(href="#")
+					img(src="img/inst.svg")
+		// end CONTACT
+		// start MAP
+		.map
+		// end MAP
+		// start FOOTER
+		footer.footer
+			.container
+				.copyright Copyright © 2016
+				a.go-top(role="button") back to top
+		// end FOOTER
