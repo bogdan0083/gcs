@@ -9,8 +9,8 @@ gulp.task('copy:fonts', function() {
 
 gulp.task('copy:lib', function() {
     return gulp
-        .src(config.src.lib + '/**/*.*')
-        .pipe(gulp.dest(config.dest.lib));
+        .src(config.src.js + '/**/*.js')
+        .pipe(gulp.dest(config.dest.js));
 });
 
 gulp.task('copy:rootfiles', function() {
@@ -31,7 +31,7 @@ gulp.task('copy:img', function() {
 gulp.task('copy', [
     'copy:img',
     // 'copy:rootfiles',
-    // 'copy:lib',
+    'copy:lib',
     'copy:fonts'
 ]);
 gulp.task('copy:watch', function() {

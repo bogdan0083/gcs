@@ -1,3 +1,8 @@
+// VARIABLES
+$blue: #38d9d6
+$blue-dark: #00b3be
+
+
 +font('Pragmatica', 'prgbook', 400, normal)
 +font('Pragmatica', 'prgbookitalic', 400, italic)
 +font('Pragmatica', 'prgbold', 700, normal)
@@ -15,7 +20,13 @@ body
 	font-size: 14px
 	font-family: 'Pragmatica', Arial, sans-serif
 	font-weight: 400
+	+rmin(800)
+		font-size: 16px
 
+
+.out
+	overflow: hidden
+	position: relative
 a
 	color: gray
 
@@ -30,5 +41,19 @@ a
 		padding: 0 15px
 		+clr()
 
+img
+	max-width: 100%
+
 .color-blue
-	color $blue-dark
+	color: $blue-dark
+
+.slick-slide:focus
+	outline: none
+
+.btn
+	text-decoration: none
+	display: inline-block
+	padding: 6px 12px 7px
+	border-radius: 3px
+	color: white
+	background-color: $blue-dark
