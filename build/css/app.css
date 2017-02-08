@@ -1,3 +1,7 @@
+.parallax-mirror {
+  background-color: #2a3337;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -4905,7 +4909,6 @@ html {
 }
 
 body {
-  background: #FFF;
   line-height: 1.25;
   font-size: 14px;
   font-family: 'Pragmatica', Arial, sans-serif;
@@ -4970,6 +4973,10 @@ img {
   left: 10px;
   top: 50%;
   margin-top: -6px;
+}
+
+.parallax-mirror {
+  background-color: #2a3337;
 }
 
 .block {
@@ -5095,6 +5102,10 @@ img {
   padding-top: 140px;
   padding-bottom: 30px;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  background-attachment: fixed;
 }
 
 .promo h1 {
@@ -5114,6 +5125,10 @@ img {
   max-width: 400px;
   margin: 0 auto;
   font-family: 'Futuris', Arial, sans-serif;
+}
+
+.promo .gcs-slogan {
+  display: none;
 }
 
 .promo .woman-img {
@@ -5361,6 +5376,11 @@ img {
 .mice-block .icon {
   height: 75px;
   position: relative;
+  display: block;
+}
+
+.mice-block .icon:focus {
+  outline: none;
 }
 
 .mice-block .icon img {
@@ -5448,13 +5468,17 @@ img {
   float: left;
   margin: 10px 0;
   text-transform: uppercase;
-  font-size: 17px;
-  padding: 0 18px;
+  font-size: 14px;
 }
 
 .single-event .icon {
   position: relative;
   height: 70px;
+  display: block;
+}
+
+.single-event .icon:focus {
+  outline: none;
 }
 
 .single-event .icon img {
@@ -5749,6 +5773,10 @@ a.go-top:after {
   opacity: 1;
 }
 
+.gcs-popup-single .gcs-popup-block.share, .gcs-popup-news .gcs-popup-block.share {
+  margin: 20px 0;
+}
+
 @media only screen and (min-width: 800px) {
   body {
     font-size: 16px;
@@ -5818,6 +5846,9 @@ a.go-top:after {
     width: 284px;
     margin: 70px 0 0;
   }
+  .promo .gcs-slogan {
+    display: block;
+  }
   .promo {
     height: 651px;
     text-align: left;
@@ -5879,7 +5910,7 @@ a.go-top:after {
   .mice-department .globe-big {
     display: inline-block;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 -10px 0 -10px;
   }
   .mice-group-left {
     float: left;
@@ -5892,14 +5923,20 @@ a.go-top:after {
     float: right;
     padding-top: 20px;
   }
+  .mice-group-right .top {
+    float: right;
+    text-align: center;
+    padding-right: 20px;
+  }
   .mice-group-right .mice-block:first-child {
     margin-bottom: 50px;
   }
   .mice-group-right p {
     text-align: right;
+    clear: both;
   }
   .mice-block {
-    width: 180px;
+    width: 220px;
     margin: 22px 0;
   }
   .mice-block p {
@@ -6103,6 +6140,8 @@ a.go-top:after {
   }
   .single-event {
     width: 20%;
+    font-size: 17px;
+    padding: 0 18px;
   }
   .single-event:nth-child(2n+1) {
     clear: none;
@@ -6125,7 +6164,9 @@ a.go-top:after {
   }
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {/**
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+
+  /**
        * Remove all paddings around the image on small screen
        */
   .mfp-img-mobile .mfp-image-holder {

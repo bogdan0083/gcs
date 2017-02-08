@@ -4,7 +4,7 @@ title: Index Page
 extends layouts/_layout
 block content
 	// start PROMO
-	section.promo(data-parallax="scroll" data-image-src="img/promo-bg.jpg")
+	section.promo(style="background-image: url(img/promo-bg.jpg)")
 		.container
 			.promo-left
 				h1.wow.fadeInUp Наши возможности #[span.wow.fadeIn(data-wow-delay="1s" data-wow-duration="0.6s") бесконечны]
@@ -22,12 +22,12 @@ block content
 				.welcome-block-top
 					img(alt="" src="img/globe.svg" width="74" height="74")
 					h3 #[a.js-anchor(href="#mice-department") Mice] Департамент
-				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
+				p Мы всегда стремимся оптимизировать затраты клиентов и подобрать оптимальный вариант проведения любых мероприятий: служебных поездок, выездных конференций, семинаров, тренингов и инсентив-поездок
 			.welcome-block.wow.fadeInRight
 				.welcome-block-top
 					img(alt="" src="img/people-blue.svg" width="80" height="78")
 					h3 #[a.js-anchor(href="#event-department") Event] Департамент
-				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
+				p Предлагаем профессиональную организацию и проведение корпоративных вечеринок, в т.ч. VIP категории, а также детских и спортивных праздников, предоставляем техническое обеспечение и ресторанное обслуживание мероприятий.
 	// end WELCOME
 	// start PROJECTS
 	section.projects#projects
@@ -62,56 +62,56 @@ block content
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="2")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-1" data-category="2")
 				img(alt="" src="img/gallery-item3.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="2")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-2" data-category="2")
 				img(alt="" src="img/gallery-item4.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="3")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-1" data-category="3")
 				img(alt="" src="img/gallery-item5.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее					
-			a.projects-item.filtr-item(href="#" data-category="3")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-2" data-category="3")
 				img(alt="" src="img/gallery-item1.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="1")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-1" data-category="1")
 				img(alt="" src="img/gallery-item2.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="1")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-2" data-category="1")
 				img(alt="" src="img/gallery-item3.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="1")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-1" data-category="1")
 				img(alt="" src="img/gallery-item4.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="1")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-2" data-category="1")
 				img(alt="" src="img/gallery-item5.jpg")
 				.overlay
 					.overlay-body
@@ -159,26 +159,30 @@ block content
 				img.globe-big(src="img/globe-big.png" data-wow-offset="200" data-wow-delay="3.4s")
 				.mice-group-left
 					.mice-block(data-wow-delay="1s" data-wow-offset="200")
-						.icon
-							img(alt="" src="img/map.svg" width="108" height="56")
-						h3 Деловые мероприятия #[br] в России
-						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
+						.top
+							a.icon.popup-link(href="#gcs-popup-single")
+								img(alt="" src="img/map.svg" width="108" height="56")
+							h3 Деловые мероприятия #[br] в России
+						p Мы не просто оказываем услуги по организации конференций, мы создаем по-настоящему комфортную бизнес-атмосферу.
 					.mice-block(data-wow-delay="2.2s" data-wow-offset="-400")
-						.icon
-							img(alt="" src="img/globe.svg" width="66" height="66")
-						h3 Деловые мероприятия #[br] в России
-						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
+						.top
+							a.icon.popup-link(href="#gcs-popup-single")
+								img(alt="" src="img/globe.svg" width="66" height="66")
+							h3 Деловые мероприятия #[br] за рубежом
+						p Одним из центральных видов нашей деятельности - является деловых мерпориятий более, чем в 50 странах мира.
 				.mice-group-right
 					.mice-block(data-wow-delay="1.6s" data-wow-offset="200")
-						.icon
-							img(alt="" src="img/heart.svg" width="108" height="56")
-						h3 Интенсив #[br] поездки
-						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
+						.top
+							a.icon.popup-link(href="#gcs-popup-single")
+								img(alt="" src="img/heart.svg" width="108" height="56")
+							h3 Интенсив #[br] поездки
+						p Полная организация поощрительных поездок для сотрудников компаний, начиная с выбора направления и заканчивая бронированием билетов для участников.
 					.mice-block(data-wow-delay="2.8s" data-wow-offset="-400")
-						.icon
-							img(alt="" src="img/prize.svg" width="79" height="74")
-						h3 Наши #[br] награды
-						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
+						.top
+							a.icon.popup-link(href="#gcs-popup-single")
+								img(alt="" src="img/prize.svg" width="79" height="74")
+							h3 Наши #[br] награды
+						p За 12 лет своего существования компания GCS Business Group стала обладателем ряда профессиональных наград и множества благодарственных писем от наших клиентов.
 	// end mice department
 	// start event department
 	section.event-department#event-department(data-parallax="scroll" data-image-src="img/event-bg.jpg")
@@ -197,23 +201,23 @@ block content
 						p реализованных проектов
 			.events
 				.single-event
-					.icon
+					a.icon.popup-link(href="#gcs-popup-single")
 						img(alt="" src="img/teambuilding.svg" width="67" height="62")
 					p тимбилдинги		
 				.single-event
-					.icon
+					a.icon.popup-link(href="#gcs-popup-single")
 						img(alt="" src="img/people-white.svg" width="66" height="63")
 					p Корпоративные #[br] мероприятия
 				.single-event
-					.icon
+					a.icon.popup-link(href="#gcs-popup-single")
 						img(alt="" src="img/cake.svg" width="63" height="63")
 					p Юбилеи компаний
 				.single-event
-					.icon
+					a.icon.popup-link(href="#gcs-popup-single")
 						img(alt="" src="img/mic.svg" width="47" height="71")
 					p Презентации
 				.single-event
-					.icon
+					a.icon.popup-link(href="#gcs-popup-single")
 						img(alt="" src="img/selebrate.svg" width="75" height="68")
 					p Детские #[br] мероприятия		
 	// end event department
@@ -221,7 +225,7 @@ block content
 	section.news#news
 		.container
 			h2 Новости
-			p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
+			p Дорогие друзья! #[br] Мы рады представить Вашему вниманию все яркие события в жизни компании, а также последние предложения и идеи по организации мероприятий.
 			.news-group
 				.row
 					.news-item
@@ -229,43 +233,44 @@ block content
 							.slide
 								img(alt="" src="img/news.jpg")
 								h4 
-									a(href="#") Lorem ipsum dolor sit ameе
-								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn(href="") Подробнее
+									a(href="#") BBT Awards 2016
+								p Дорогие друзья и партнеры GCS Business Group, наша компания номинирована в качестве Лучшего MICE-агентства в конкурсе BBT Awards 2016! 
+								a.btn.popup-link(href="gcs-popup-news") Подробнее
 							.slide
 								img(alt="" src="img/news.jpg")
 								h4 
-									a(href="#") Lorem ipsum dolor sit ameе
-								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn(href="") Подробнее
+									a(href="#") Корпоративное лето 2016
+								p Предлагаем Вашему вниманию каталог идей. Как провести лето в компании коллег с пользой!
+								a.btn.popup-link(href="gcs-popup-news") Подробнее
 					.news-item
 						.news-item-slider
 							.slide
 								img(alt="" src="img/news.jpg")
 								h4 
-									a(href="#") Lorem ipsum dolor sit ameе
-								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn(href="#") Подробнее
+									a(href="#") Корпоративное лето 2016
+								p Предлагаем Вашему вниманию каталог идей. Как провести лето в компании коллег с пользой!
+								a.btn(href="https://yadi.sk/d/SWWFXkO5tcSGV") Скачать
 							.slide
 								img(alt="" src="img/news.jpg")
 								h4 
-									a(href="#") Lorem ipsum dolor sit ameе
-								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn(href="#") Скачать
+									a(href="#") Корпоративное лето 2016
+								p Предлагаем Вашему вниманию каталог идей. Как провести лето в компании коллег с пользой!
+								a.btn(href="https://yadi.sk/d/SWWFXkO5tcSGV") Скачать
 					.news-item
 						.news-item-slider
 							.slide
 								img(alt="" src="img/news.jpg")
 								h4 
-									a(href="#") Lorem ipsum dolor sit ameе
-								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn(href="#") Подробнее
+									a(href="#") GCS Business Group
+								p Дорогие подписчики, друзья, партнеры! Сегодня замечательный день - День рождения нашей компании! GCS Business Group исполнилось 12 лет! 
+								a.btn.popup-link(href="#gcs-popup-news") Подробнее
 							.slide
 								img(alt="" src="img/news.jpg")
 								h4 
-									a(href="#") Lorem ipsum dolor sit ameе
-								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn(href="#") Скачать						
+									a(href="#") GCS Business Group
+								p Дорогие подписчики, друзья, партнеры! Сегодня замечательный день - День рождения нашей компании! GCS Business Group исполнилось 12 лет! 
+
+								a.btn.popup-link(href="#gcs-popup-news") Скачать						
 	// end NEWS
 	// start CLIENTS
 	section.clients(data-parallax="scroll" data-image-src="img/mice-bg.jpg")
@@ -344,6 +349,60 @@ block content
 						.gcs-popup-block
 							h4 Количество участников:
 							p 200 чел.
+						.gcs-popup-block.share
+							a.btn.btn-share(href="#") Поделиться
+			.gcs-popup-text Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
+	// end GCS POPUP
+	// start GCS POPUP NEWS
+	.gcs-popup.gcs-popup-single.mfp-hide#gcs-popup-news
+		.gcs-popup-inner.scrollbar-inner
+			.gcs-popup-nav
+				a.arr-popup-prev(href="#")
+					img(alt="" src="img/arr-left.svg" width="28" height="24")
+				a.arr-popup-next(href="#")
+					img(alt="" src="img/arr-right.svg" width="28" height="24")
+				a.popup-close(href="#")
+					img(alt="" src="img/cross.svg" width="23" height="23")
+			.gcs-popup-top
+				h3 Субботник
+				.gcs-popup-slider
+					.arrows
+						a.arr-slider.arr-slider-left(href="#" role="button")
+							img(alt="" src="img/arr-white-left.svg" width="17" height="28")
+						a.arr-slider.arr-slider-right(href="#" role="button")
+							img(alt="" src="img/arr-white-right.svg" width="17" height="28")
+					.wrapper
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+				.gcs-popup-info
+					.inner
+						.gcs-popup-block.share
+							a.btn.btn-share(href="#") Поделиться
+			.gcs-popup-text Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
+	// end GCS POPUP
+	// start GCS POPUP SINGLE
+	.gcs-popup.gcs-popup-single.mfp-hide#gcs-popup-single
+		.gcs-popup-inner.scrollbar-inner
+			.gcs-popup-nav
+				a.popup-close(href="#")
+					img(alt="" src="img/cross.svg" width="23" height="23")
+			.gcs-popup-top
+				h3 Субботник
+				.gcs-popup-slider
+					.arrows
+						a.arr-slider.arr-slider-left(href="#" role="button")
+							img(alt="" src="img/arr-white-left.svg" width="17" height="28")
+						a.arr-slider.arr-slider-right(href="#" role="button")
+							img(alt="" src="img/arr-white-right.svg" width="17" height="28")
+					.wrapper
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+				.gcs-popup-info
+					.inner
 						.gcs-popup-block.share
 							a.btn.btn-share(href="#") Поделиться
 			.gcs-popup-text Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....

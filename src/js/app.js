@@ -59,8 +59,7 @@ $(document).ready(function() {
         	if ($counter.length > 0) {
 
         		var $counterNum = parseInt( $counter.text().split(' ').join('') );
-	            $counter.text( -10000000 );
-	            console.log($counter.text());
+	            $counter.text( 0 );
 	            setTimeout(function () {
 	            	// body...
 	            	$counter.animateNumber({ number: $counterNum, easing: 'easeOutQuad' }, 3000);
