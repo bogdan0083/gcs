@@ -107,4 +107,116 @@ $(document).ready(function() {
 
     initMap();
 
+
+    // event POPUP custom scrollbar
+
+    $('.gcs-popup-inner').scrollbar();
+
+    // ---------------------------
+
+    // arrow UP!
+    // 
+
+    var $arrowUp = $('.go-top');
+
+    $arrowUp.click(function(e) {
+        e.preventDefault();
+
+        $('body, html').animate({
+            'scrollTop': 0
+        });
+    });
+
+    $('.gcs-popup-slider .wrapper').slick({
+        arrows: true,
+        infinite: false,
+        prevArrow: $('.arr-slider-left'),
+        nextArrow: $('.arr-slider-right'),
+    });
+
+    $('.arr-left').click(function(e) {
+        // body...
+    });
+
+    var currentPopupIndex;
+    // Initialize popup as usual
+    $('.popup-link').magnificPopup({
+        // Delay in milliseconds before popup is removed
+        removalDelay: 300,
+        showCloseBtn: false,
+        // Class that is added to popup wrapper and background
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade',
+        callbacks: {
+            open: function() {
+                currentPopupIndex = this.currItem.index;
+                $('.gcs-popup-slider .wrapper').slick('setPosition');
+            }
+        }
+    });
+
+    $('.popup-close').click(function(e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+
+    $('.arr-popup-prev').click(function(e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+
+        setTimeout(function() {
+            // body...
+            $('.popup-link').magnificPopup('open', currentPopupIndex - 1);
+        }, 300);
+
+    });
+
+    $('.arr-popup-next').click(function(e) {
+        e.preventDefault();
+
+        $.magnificPopup.close();
+
+        setTimeout(function() {
+            // body...
+            $('.popup-link').magnificPopup('open', currentPopupIndex + 1);
+        }, 300);
+    });
+
+    var $anchors = $('.js-anchor');
+
+    $anchors.click(function(e) {
+        e.preventDefault();
+
+        var $anchor = $(this);
+        var id = $anchor.attr('href');
+
+        $('body, html').animate({
+            'scrollTop': $(id).offset().top - $('.header').height()
+        });
+    });
+
+    if ($(window).width() > 880) {
+
+        var headerPainted = null;
+        var wScrolled;
+
+        $(window).on('scroll', function() {
+            paintHeader();     
+        });
+
+
+        function paintHeader() {
+            wScrolled = $(window).scrollTop();
+
+            if (wScrolled > 0 && !headerPainted) {
+                $('.header').addClass('js-painted');
+                headerPainted = true;
+            } else if (wScrolled <= 0) {
+                $('.header').removeClass('js-painted');
+                headerPainted = false;
+            }
+        }
+
+        paintHeader();
+    }
 });

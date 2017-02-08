@@ -12,6 +12,9 @@
 	left: 0
 	width: 100%
 	z-index: 200
+	transition: all 0.3s
+	&.js-painted 
+		background-color: rgba(0, 0, 0, 0.90)
 	.logo
 		display: inline-block
 		width: 136px
@@ -92,10 +95,12 @@
 		text-transform: uppercase
 		font-size: 24px
 		line-height: 1.4
+		font-weight: 400
 		+rmin(800)
 			font-size: 40px
 			width: 300px
 			margin-bottom: 60px
+			line-height: 1.1
 		+futuris()
 		span
 			color: $blue
@@ -103,11 +108,12 @@
 		line-height: 1.4
 		max-width: 400px
 		margin: 0 auto
+		+futuris()
 		+rmin(800)
-			font-size: 18px
-			line-height: 1.5
+			font-size: 22px
+			line-height: 1.2
 			width: 284px
-			margin: 0
+			margin: 70px 0 0
 	.woman-img
 		display: none
 	+rmin(800)
@@ -117,7 +123,7 @@
 		padding-top: 0
 		&-left
 			float: left
-			padding-top: 150px
+			padding-top: 190px
 		&-right
 			float: right
 			position: relative
@@ -149,16 +155,19 @@
 			margin: 0 auto
 			+rmin(800)
 				max-width: 100%
+				font-size: 27px
+				padding-top: 28px
+				padding-bottom: 30px
 			strong
 				font-weight: 700
 	&-block
 		max-width: 400px
-		margin: 40px auto
+		margin: 34px auto
 		p
 			color: #8e9191
-			line-height: 1.4
+			line-height: 1.3
 		+rmin(800)
-			max-width: 380px
+			max-width: 385px
 			float: left
 			&:last-child
 				float: right
@@ -168,8 +177,8 @@
 			font-size: 26px
 			margin: 0
 			padding-top: 4px
-			span
-				color: $blue
+			a
+				color: $blue-dark
 				display: block
 		&-top
 			position: relative
@@ -183,8 +192,10 @@
 // projects
 .projects
 	text-align: center
+	padding-top: 13px
 	h3
-		font-size: 26px
+		font-size: 29px
+		margin-bottom: 22px
 		text-transform: uppercase
 		font-weight: 400
 		span
@@ -196,9 +207,11 @@
 			padding: 0
 			margin: 0
 			list-style: none
+			margin-left: -6px
+			margin-right: -6px
 			li
 				display: inline-block
-				margin: 4px 2px
+				margin: 6px 6px
 			a
 				display: inline-block
 				text-decoration: none
@@ -229,7 +242,7 @@
 		padding-bottom: 17%
 	+rmin(1100)
 		width: 20%
-		padding-bottom: 13.5%	
+		padding-bottom: 13.6%	
 	img
 		display: block
 		width: 100%
@@ -271,7 +284,8 @@
 	&-group
 		padding: 20px 0
 		+rmin(800)
-			margin: 0 -20px
+			margin: 0 -50px
+			padding: 56px 0 40px
 	h2
 		background-color: #394a58
 		margin: 0
@@ -280,9 +294,11 @@
 		font-weight: 400
 		text-transform: uppercase
 		padding: 10px 0
-		font-size: 26px
+		font-size: 27px
+		position: relative
+		z-index: 10
 		+rmin(800)
-			padding: 20px 0
+			padding: 22px 0 18px
 		span
 			color: $blue-dark
 
@@ -293,8 +309,7 @@
 	width: 50%
 	margin-right: -3px
 	+rmin(800)
-		width: auto
-		margin: 20px 35px
+		width: 20%
 	&-count
 		color: #394a58
 		font-size: 30px
@@ -303,14 +318,16 @@
 			font-size: 50px
 	p
 		font-size: 15px
+		+rmin(800)
+			font-size: 18px
 
 
 // mice department
 .mice-department
-	padding: 20px 0
+	padding: 20px 0 
 	text-align: center
 	+rmin(800)
-		padding-bottom: 50px
+		padding-bottom: 60px
 	.globe-big
 		display: none
 		+rmin(800)
@@ -319,7 +336,8 @@
 			margin: 0 auto
 		+rmin(1000)
 			width: auto
-			max-width: 100%	
+			max-width: 100%
+			margin-top: 40px
 	h2
 		font-weight: 400
 		text-transform: uppercase
@@ -329,6 +347,7 @@
 .mice-group-left
 	+rmin(800)
 		float: left
+		padding-top: 16px
 		p
 			text-align: left
 .mice-group-right
@@ -340,7 +359,7 @@
 		p
 			text-align: right		
 .mice-block
-	margin: 40px 0
+	margin: 30px 0
 	.icon
 		height: 75px
 		position: relative
@@ -353,10 +372,14 @@
 			left: 0
 	+rmin(800)
 		width: 180px
+		margin: 22px 0
 	h3
 		text-transform: uppercase
 		font-weight: 400
+		margin-top: 10px
+		margin-bottom: 10px
 	p
+		font-size: 15px
 		+rmin(800)
 			color: #8e9191
 
@@ -369,6 +392,7 @@
 		display: none
 	+rmin(800)
 		padding-bottom: 40px
+		padding-top: 70px
 		.event-advantages
 			height: 407px
 			position: relative
@@ -385,13 +409,15 @@
 		font-weight: 400
 		text-transform: uppercase
 		color: white
+		+rmin(800)
+			font-size: 26px
 		span
 			color: $blue-dark
 
 .event-advantages-group
 	+rmin(800)
 		width: 730px
-		margin: 0 auto
+		margin: 50px auto 0
 		position: relative
 		padding-top: 70px
 		+clr()
@@ -421,11 +447,12 @@
 		width: 200px
 		h3
 			font-size: 50px
+			margin-top: 5px
 			display: inline-block
 		p
 			line-height: 1.2
 			margin-top: 0
-			font-size: 17px	
+			font-size: 21px
 		&.first
 			float: left
 		&.second
@@ -442,6 +469,8 @@
 	float: left
 	margin: 10px 0
 	text-transform: uppercase
+	font-size: 17px
+	padding: 0 18px
 	.icon
 		position: relative
 		height: 70px
@@ -462,7 +491,7 @@
 .news
 	padding: 30px 0
 	.container > p
-		max-width 660px
+		max-width: 660px
 		margin: 0 auto
 	.row
 		margin-left: -8px
@@ -481,13 +510,25 @@
 			font-size: 16px
 	.news-item p
 		text-align: left
+	+rmin(800)
+		padding-bottom: 50px	
 
 .news-item
 	margin: 40px 0
 	padding: 0 8px
 	text-align: left
 	.btn
-		margin-top: 20px
+		margin-top: 10px
+	h4
+		font-weight: 400
+		font-size: 20px
+		margin-bottom: 18px
+		a
+			text-decoration: none	
+			color: #394a58
+			transition: all 0.3s
+			&:hover
+				color: $blue-dark
 	+rmin(800)
 		width: 33.3333%
 		float: left
@@ -498,7 +539,7 @@
 	text-align: center
 	padding: 30px 0
 	+rmin(800)
-		padding: 80px 0 100px
+		padding: 80px 0 90px
 	h2
 		color: $blue-dark
 		text-transform: uppercase
@@ -531,6 +572,7 @@
 			float: left
 			text-align: left
 			width: 340px
+			margin-top: 18px
 	&-block
 		margin: 10px 0		
 	&-right
@@ -568,3 +610,172 @@ address
 	height: 300px
 	+rmin(800)
 		height: 552px
+
+
+// FOOTER
+// 
+
+.footer
+	color: #fff
+	background-color: #30373e
+	text-align: center
+	padding: 20px
+	font-size: 14px
+	+rmin(800)
+		padding: 0
+		height: 67px
+
+.copyright
+	opacity: 0.6
+	margin: 4px 0
+	+rmin(800)
+		margin: 0
+		height: 67px
+		line-height: 67px
+		float: left
+a.go-top
+	text-transform: uppercase
+	margin: 4px 0
+	color: #fff
+	transition: all 0.3s
+	text-decoration: none
+	+rmin(800)
+		margin: 0
+		height: 67px
+		line-height: 67px
+		float: right
+	&:hover
+		opacity: 0.8
+	&:after
+		content: ''
+		margin-left: 4px
+		width: 12px
+		height: 11px
+		display: inline-block
+		margin-top: 5px
+		background: url(../img/arr-up.png) no-repeat center
+
+// GCS POPUP
+// 
+.gcs-popup
+	border: 1px solid gray
+	min-height: 600px
+	max-width: 977px
+	position: relative
+	overflow: hidden
+	// max-height: 908px
+	margin: 0 auto
+	padding: 20px 0
+	background-color: #FFF
+	transition: all 0.4s
+	opacity: 0
+	&-inner
+		overflow-x: hidden
+		max-height: 700px
+	&-nav
+		position: absolute
+		right: 10px
+		top: 0
+		a
+			margin: 0 4px
+			transition: all 0.3s
+			&:hover
+				opacity: 0.6
+		+rmin(800)
+			right: 40px
+	h3
+		color: #00b3be
+		font-size: 18px
+		font-weight: 400
+		line-height: 55px
+		padding-left: 20px
+		margin-top: 30px
+		+rmin(880)
+			max-width: 686px
+			margin-left: auto
+			margin-right: auto
+			font-size: 24px
+			padding-left: 0
+	&-top
+		position: relative	
+	&-slider
+		position: relative
+		+rmin(800)
+			height: 398px
+			overflow: hidden
+	.arr-slider
+		position: absolute	
+	&-info
+		+clr()
+		padding: 0 10px
+		font-family: Arial, sans-serif
+		overflow: hidden
+		box-sizing: border-box
+		+rmin(800)
+			margin: 0 auto
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			background-color: rgba(white, .95)
+			.inner
+				max-width: 686px
+				margin: 0 auto
+	&-block
+		display: inline-block
+		width: 50%
+		margin-right: -3px
+		vertical-align: top
+		margin: 20px -3px 10px 0
+		max-width: 200px
+		+rmin(800)
+			width: auto
+			margin-right: 60px
+			&.share
+				margin-right: -100px
+		h4
+			color: #00b3be
+			font-weight: 400
+			margin-bottom: 4px
+			margin-top: 0
+		p
+			margin-top: 10px
+	&-text
+		color: #8e9191
+		font-size: 14px
+		padding: 0 20px
+		line-height: 1.5
+		+rmin(800)
+			padding: 30px 0
+			max-width: 686px
+			margin: 0 auto
+	.arr-slider
+		display: none
+		+rmin(800)
+			display: block
+			position: absolute
+			background-color: $blue-dark
+			width: 45px
+			height: 45px
+			left: 40px
+			bottom: 115px
+			z-index: 3
+			transition: all 0.3s
+			&.slick-disabled
+				opacity: 0
+				pointer-events: none
+			&:hover
+				background-color: darken($blue-dark, 10%)
+			img
+				position: absolute
+				margin: auto
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+			&-right
+				left: auto
+				right: 40px	
+
+.mfp-ready .gcs-popup
+	opacity: 1

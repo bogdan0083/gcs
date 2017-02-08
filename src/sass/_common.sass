@@ -57,3 +57,19 @@ img
 	border-radius: 3px
 	color: white
 	background-color: $blue-dark
+	transition: all 0.3s
+	&:hover 
+		background-color: darken($blue-dark, 10%)
+	&-share
+		border-radius: 20px
+		padding-left: 30px
+		position: relative
+		&:before
+			content: '';
+			width: 12px
+			height: 12px
+			background: url(../img/heart-white.svg) no-repeat
+			position: absolute
+			left: 10px
+			top: 50%
+			margin-top: -6px

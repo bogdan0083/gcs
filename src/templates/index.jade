@@ -12,26 +12,26 @@ block content
 
 			.promo-right
 				span.gcs-slogan gcs взгляни на мир по-новому
-				img.woman-img(src="img/woman.png")
+				img.woman-img(alt="" src="img/woman.png")
 	// end PROMO
 	// start WELCOME
-	section.welcome
+	section.welcome#welcome
 		.welcome-top
 			h2 welcome to #[strong GCS] business group
 		.container
 			.welcome-block
 				.welcome-block-top
-					img(src="img/globe.svg" width="74" height="74")
-					h3 #[span Mice] Департамент
+					img(alt="" src="img/globe.svg" width="74" height="74")
+					h3 #[a.js-anchor(href="#mice-department") Mice] Департамент
 				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
 			.welcome-block
 				.welcome-block-top
-					img(src="img/people-blue.svg" width="80" height="78")
-					h3 #[span Event] Департамент
+					img(alt="" src="img/people-blue.svg" width="80" height="78")
+					h3 #[a.js-anchor(href="#event-department") Event] Департамент
 				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
 	// end WELCOME
 	// start PROJECTS
-	section.projects
+	section.projects#projects
 		h3 Наши #[span проекты]
 		// start PROJECTS FILTER
 		.projects-filter
@@ -49,71 +49,71 @@ block content
 		// end PROJECTS FILTER
 		// start PROJECTS GALLERY		
 		.projects-gallery
-			a.projects-item.filtr-item(href="#" data-category="1")
-				img(src="img/gallery-item1.jpg")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-1" data-category="1")
+				img(alt="" src="img/gallery-item1.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="1")
-				img(src="img/gallery-item2.jpg")
-				.overlay
-					.overlay-body
-						h4 Летнее мероприятие
-						p с квестом и флешмобом
-						span.btn подробнее
-			a.projects-item.filtr-item(href="#" data-category="2")
-				img(src="img/gallery-item3.jpg")
+			a.projects-item.filtr-item.popup-link(href="#gcs-popup-2" data-category="1")
+				img(alt="" src="img/gallery-item2.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
 			a.projects-item.filtr-item(href="#" data-category="2")
-				img(src="img/gallery-item4.jpg")
+				img(alt="" src="img/gallery-item3.jpg")
+				.overlay
+					.overlay-body
+						h4 Летнее мероприятие
+						p с квестом и флешмобом
+						span.btn подробнее
+			a.projects-item.filtr-item(href="#" data-category="2")
+				img(alt="" src="img/gallery-item4.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
 			a.projects-item.filtr-item(href="#" data-category="3")
-				img(src="img/gallery-item5.jpg")
+				img(alt="" src="img/gallery-item5.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее					
 			a.projects-item.filtr-item(href="#" data-category="3")
-				img(src="img/gallery-item1.jpg")
+				img(alt="" src="img/gallery-item1.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
 			a.projects-item.filtr-item(href="#" data-category="1")
-				img(src="img/gallery-item2.jpg")
+				img(alt="" src="img/gallery-item2.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
 			a.projects-item.filtr-item(href="#" data-category="1")
-				img(src="img/gallery-item3.jpg")
+				img(alt="" src="img/gallery-item3.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
 			a.projects-item.filtr-item(href="#" data-category="1")
-				img(src="img/gallery-item4.jpg")
+				img(alt="" src="img/gallery-item4.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
 						p с квестом и флешмобом
 						span.btn подробнее
 			a.projects-item.filtr-item(href="#" data-category="1")
-				img(src="img/gallery-item5.jpg")
+				img(alt="" src="img/gallery-item5.jpg")
 				.overlay
 					.overlay-body
 						h4 Летнее мероприятие
@@ -122,38 +122,38 @@ block content
 		// end PROJECTS GALLERY
 	// end PROJECTS
 	// start FEATURES
-	section.features
+	section.features#features
 		h2 #[span 12 лет] успешной работы
 		.container
 			.features-group
 				.feature
 					.feature-icon
-						img(src="img/graph.svg" width="65" height="65")
+						img(alt="" src="img/graph.svg" width="65" height="65")
 					h4.feature-count 12
 					p лет на рынке #[br] услуг
 				.feature
 					.feature-icon
-						img(src="img/bag-blue.svg" width="65" height="65")
+						img(alt="" src="img/bag-blue.svg" width="65" height="65")
 					h4.feature-count 2000
 					p и более проектов #[br] по всему миру
 				.feature
 					.feature-icon
-						img(src="img/people-down.svg" width="65" height="65")
+						img(alt="" src="img/people-down.svg" width="65" height="65")
 					h4.feature-count 25 000
 					p человек #[br] на одном #[br] мероприятии
 				.feature
 					.feature-icon
-						img(src="img/globe-mark.svg" width="65" height="65")
+						img(alt="" src="img/globe-mark.svg" width="65" height="65")
 					h4.feature-count 50
 					p стран, где мы #[br] работаем
 				.feature
 					.feature-icon
-						img(src="img/list.svg" width="65" height="65")
+						img(alt="" src="img/list.svg" width="65" height="65")
 					h4.feature-count 30
 					p договоров #[br] на годовое #[br] обслуживание			
 	// end FEATURES
 	// start mice department
-	section.mice-department(data-parallax="scroll" data-image-src="img/mice-bg.jpg")
+	section.mice-department#mice-department(data-parallax="scroll" data-image-src="img/mice-bg.jpg")
 		.container
 			h2 #[span Mice] департамент
 			.mice-group
@@ -161,65 +161,65 @@ block content
 				.mice-group-left
 					.mice-block
 						.icon
-							img(src="img/map.svg" width="108" height="56")
+							img(alt="" src="img/map.svg" width="108" height="56")
 						h3 Деловые мероприятия #[br] в России
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
 					.mice-block
 						.icon
-							img(src="img/globe.svg" width="66" height="66")
+							img(alt="" src="img/globe.svg" width="66" height="66")
 						h3 Деловые мероприятия #[br] в России
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
 				.mice-group-right
 					.mice-block
 						.icon
-							img(src="img/heart.svg" width="108" height="56")
+							img(alt="" src="img/heart.svg" width="108" height="56")
 						h3 Интенсив #[br] поездки
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
 					.mice-block
 						.icon
-							img(src="img/prize.svg" width="79" height="74")
+							img(alt="" src="img/prize.svg" width="79" height="74")
 						h3 Наши #[br] награды
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
 	// end mice department
 	// start event department
-	.event-department(data-parallax="scroll" data-image-src="img/event-bg.jpg")
+	section.event-department#event-department(data-parallax="scroll" data-image-src="img/event-bg.jpg")
 		.container
 			h2 #[span Event] департамент
 			.event-advantages
-				img(src="img/infinity.svg" class="event-department-img")
+				img(alt="" src="img/infinity.svg" class="event-department-img")
 				.event-advantages-group
 					.event-advantage.first
-						img(src="img/group.svg" width="85" height="70")
+						img(alt="" src="img/group.svg" width="85" height="70")
 						h3 25 000
 						p человек на одном мероприятии
 					.event-advantage.second
-						img(src="img/bag-white.svg" width="85" height="62")
+						img(alt="" src="img/bag-white.svg" width="85" height="62")
 						h3 2000
 						p реализованных проектов
 			.events
 				.single-event
 					.icon
-						img(src="img/teambuilding.svg" width="67" height="62")
+						img(alt="" src="img/teambuilding.svg" width="67" height="62")
 					p тимбилдинги		
 				.single-event
 					.icon
-						img(src="img/people-white.svg" width="66" height="63")
+						img(alt="" src="img/people-white.svg" width="66" height="63")
 					p Корпоративные #[br] мероприятия
 				.single-event
 					.icon
-						img(src="img/cake.svg" width="63" height="63")
+						img(alt="" src="img/cake.svg" width="63" height="63")
 					p Юбилеи компаний
 				.single-event
 					.icon
-						img(src="img/mic.svg" width="47" height="71")
+						img(alt="" src="img/mic.svg" width="47" height="71")
 					p Презентации
 				.single-event
 					.icon
-						img(src="img/selebrate.svg" width="67" height="62")
+						img(alt="" src="img/selebrate.svg" width="75" height="68")
 					p Детские #[br] мероприятия		
 	// end event department
 	// start NEWS
-	section.news
+	section.news#news
 		.container
 			h2 Новости
 			p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
@@ -228,39 +228,45 @@ block content
 					.news-item
 						.news-item-slider
 							.slide
-								img(src="img/news.jpg")
-								h4 Lorem ipsum dolor sit ameе
+								img(alt="" src="img/news.jpg")
+								h4 
+									a(href="#") Lorem ipsum dolor sit ameе
 								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn Подробнее.
+								a.btn(href="") Подробнее
 							.slide
-								img(src="img/news.jpg")
-								h4 Lorem ipsum dolor sit ameе
+								img(alt="" src="img/news.jpg")
+								h4 
+									a(href="#") Lorem ipsum dolor sit ameе
 								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn Подробнее
+								a.btn(href="") Подробнее
 					.news-item
 						.news-item-slider
 							.slide
-								img(src="img/news.jpg")
-								h4 Lorem ipsum dolor sit ameе
+								img(alt="" src="img/news.jpg")
+								h4 
+									a(href="#") Lorem ipsum dolor sit ameе
 								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn Подробнее
+								a.btn(href="#") Подробнее
 							.slide
-								img(src="img/news.jpg")
-								h4 Lorem ipsum dolor sit ameе
+								img(alt="" src="img/news.jpg")
+								h4 
+									a(href="#") Lorem ipsum dolor sit ameе
 								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn Подробнее
+								a.btn(href="#") Скачать
 					.news-item
 						.news-item-slider
 							.slide
-								img(src="img/news.jpg")
-								h4 Lorem ipsum dolor sit ameе
+								img(alt="" src="img/news.jpg")
+								h4 
+									a(href="#") Lorem ipsum dolor sit ameе
 								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn Подробнее
+								a.btn(href="#") Подробнее
 							.slide
-								img(src="img/news.jpg")
-								h4 Lorem ipsum dolor sit ameе
+								img(alt="" src="img/news.jpg")
+								h4 
+									a(href="#") Lorem ipsum dolor sit ameе
 								p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
-								a.btn Подробнее						
+								a.btn(href="#") Скачать						
 	// end NEWS
 	// start CLIENTS
 	section.clients(data-parallax="scroll" data-image-src="img/mice-bg.jpg")
@@ -269,12 +275,12 @@ block content
 			img.clients-brands(src="img/infinity-brands.png")
 	// end CLIENTS
 	// start CONTACT
-	section.contact(data-parallax="scroll" data-image-src="img/contact-bg.jpg")
+	section.contact#contact(data-parallax="scroll" data-image-src="img/contact-bg.jpg")
 		.contact
 			.container
 				.contact-left
 					a.logo
-						img(src="img/logo.svg" width="224" height="77")
+						img(alt="" src="img/logo.svg" width="224" height="77")
 					nav.links
 						a(href="#") MICE
 						a(href="#") EVENT
@@ -287,7 +293,7 @@ block content
 						a(href="#") Выездные конференции
 						a(href="#") Инсентив поездки
 				.contact-right
-					img(src="img/paperplane.png")
+					img(alt="" src="img/paperplane.png")
 					h3 Наши контакты
 					address.contact-block.address Б. Дровяной пер., д. 20 стр. 2, Москва, Россия, 109004
 					.contact-block.phones 
@@ -296,18 +302,94 @@ block content
 					.contact-block e-mail: sales@gcs-business.ru
 					.socials
 						a.social-icon(href="#")
-							img(src="img/vk.svg" width="24" height="24")
+							img(alt="" src="img/vk.svg" width="24" height="24")
 						a.social-icon(href="#")
-							img(src="img/fb.svg" width="24" height="24")
+							img(alt="" src="img/fb.svg" width="24" height="24")
 						a.social-icon(href="#")
-							img(src="img/inst.svg" width="24" height="24")
+							img(alt="" src="img/inst.svg" width="24" height="24")
 	// end CONTACT
 	// start MAP
 	#map
 	// end MAP
+	// start GCS POPUP 1
+	.gcs-popup.mfp-hide#gcs-popup-1
+		.gcs-popup-inner.scrollbar-inner
+			.gcs-popup-nav
+				a.arr-popup-prev(href="#")
+					img(alt="" src="img/arr-left.svg" width="28" height="24")
+				a.arr-popup-next(href="#")
+					img(alt="" src="img/arr-right.svg" width="28" height="24")
+				a.popup-close(href="#")
+					img(alt="" src="img/cross.svg" width="23" height="23")
+			.gcs-popup-top
+				h3 Субботник
+				.gcs-popup-slider
+					.arrows
+						a.arr-slider.arr-slider-left(href="#" role="button")
+							img(alt="" src="img/arr-white-left.svg" width="17" height="28")
+						a.arr-slider.arr-slider-right(href="#" role="button")
+							img(alt="" src="img/arr-white-right.svg" width="17" height="28")
+					.wrapper
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+				.gcs-popup-info
+					.inner
+						.gcs-popup-block
+							h4 Клиент:
+							p ВТБ24	
+						.gcs-popup-block
+							h4 Место проведения:
+							p Москва
+						.gcs-popup-block
+							h4 Количество участников:
+							p 200 чел.
+						.gcs-popup-block.share
+							a.btn.btn-share(href="#") Поделиться
+			.gcs-popup-text Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....
+	// end GCS POPUP
+	// start GCS POPUP 2
+	.gcs-popup.mfp-hide#gcs-popup-2
+		.gcs-popup-inner.scrollbar-inner
+			.gcs-popup-nav
+				a.arr-popup-prev(href="#")
+					img(alt="" src="img/arr-left.svg" width="28" height="24")
+				a.arr-popup-next(href="#")
+					img(alt="" src="img/arr-right.svg" width="28" height="24")
+				a.popup-close(href="#")
+					img(alt="" src="img/cross.svg" width="23" height="23")
+			.gcs-popup-top
+				h3 Субботник
+				.gcs-popup-slider
+					.arrows
+						a.arr-slider.arr-slider-left(href="#" role="button")
+							img(alt="" src="img/arr-white-left.svg" width="17" height="28")
+						a.arr-slider.arr-slider-right(href="#" role="button")
+							img(alt="" src="img/arr-white-right.svg" width="17" height="28")
+					.wrapper
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+						.slide
+							img(alt="" src="img/popup-img.jpg")
+				.gcs-popup-info
+					.inner
+						.gcs-popup-block
+							h4 Клиент:
+							p ВТБ24	
+						.gcs-popup-block
+							h4 Место проведения:
+							p Москва
+						.gcs-popup-block
+							h4 Количество участников:
+							p 200 чел.
+						.gcs-popup-block.share
+							a.btn.btn-share(href="#") Поделиться
+			.gcs-popup-text Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet.....Lorem ipsum dolor sit amet, consectetuer  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+	// end GCS POPUP
 	// start FOOTER
 	footer.footer
 		.container
 			.copyright Copyright © 2016
-			a.go-top(role="button") back to top
+			a.go-top(role="button" href="#") back to top
 	// end FOOTER
