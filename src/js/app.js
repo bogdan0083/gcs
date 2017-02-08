@@ -42,7 +42,39 @@ $(document).ready(function() {
         });
     });
 
+    // init animations on scroll (WOW.JS)
 
+    var wow = new WOW({
+        mobile: false,
+        callback: function(box) {
+            // body...
+            if ($(box).hasClass('mice-department')) {
+            	console.log($(box));
+            	$(box).find('.mice-block').addClass('animated zoomIn');
+            	$(box).find('.globe-big').addClass('animated zoomIn');
+            };
+
+            var $counter = $(box).find('.js-counter');
+
+        	if ($counter.length > 0) {
+
+        		var $counterNum = parseInt( $counter.text().split(' ').join('') );
+	            $counter.text( -10000000 );
+	            console.log($counter.text());
+	            setTimeout(function () {
+	            	// body...
+	            	$counter.animateNumber({ number: $counterNum, easing: 'easeOutQuad' }, 3000);
+	            }, 200)
+            
+        	}
+            
+        }
+
+    });
+
+    wow.init();
+
+    // ----------------------------------
 
     // remove default event on click;
 
@@ -50,7 +82,12 @@ $(document).ready(function() {
 
     $filterLinks.on('click', function(e) {
         e.preventDefault();
+
+        $filterLinks.removeClass('js-active');
+        $(this).addClass('js-active');
     });
+
+    // --------------------------------
 
     $('.news-item-slider').slick({
         arrows: false,
@@ -134,10 +171,6 @@ $(document).ready(function() {
         nextArrow: $('.arr-slider-right'),
     });
 
-    $('.arr-left').click(function(e) {
-        // body...
-    });
-
     var currentPopupIndex;
     // Initialize popup as usual
     $('.popup-link').magnificPopup({
@@ -201,7 +234,7 @@ $(document).ready(function() {
         var wScrolled;
 
         $(window).on('scroll', function() {
-            paintHeader();     
+            paintHeader();
         });
 
 

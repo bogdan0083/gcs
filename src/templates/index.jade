@@ -7,24 +7,23 @@ block content
 	section.promo(data-parallax="scroll" data-image-src="img/promo-bg.jpg")
 		.container
 			.promo-left
-				h1 Наши возможности #[span бесконечны]
-				p Стирая границы возможного, мы открываем для Вас неизведанные горизонты: удивительные события, незабываемые впечатления, новые города и страны…
-
-			.promo-right
-				span.gcs-slogan gcs взгляни на мир по-новому
-				img.woman-img(alt="" src="img/woman.png")
+				h1.wow.fadeInUp Наши возможности #[span.wow.fadeIn(data-wow-delay="1s" data-wow-duration="0.6s") бесконечны]
+				p.wow.fadeInLeft(data-wow-delay="1.6s") Стирая границы возможного, мы открываем для Вас неизведанные горизонты: удивительные события, незабываемые впечатления, новые города и страны…
+			.promo-right.wow.fadeInRight(data-wow-delay="1.6s")
+				span.wow.gcs-slogan.fadeInDown(data-wow-delay="2.6s") gcs взгляни на мир по-новому
+				img.wow.woman-img(alt="" src="img/woman.png")
 	// end PROMO
 	// start WELCOME
 	section.welcome#welcome
 		.welcome-top
 			h2 welcome to #[strong GCS] business group
 		.container
-			.welcome-block
+			.welcome-block.wow.fadeInLeft
 				.welcome-block-top
 					img(alt="" src="img/globe.svg" width="74" height="74")
 					h3 #[a.js-anchor(href="#mice-department") Mice] Департамент
 				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
-			.welcome-block
+			.welcome-block.wow.fadeInRight
 				.welcome-block-top
 					img(alt="" src="img/people-blue.svg" width="80" height="78")
 					h3 #[a.js-anchor(href="#event-department") Event] Департамент
@@ -126,56 +125,56 @@ block content
 		h2 #[span 12 лет] успешной работы
 		.container
 			.features-group
-				.feature
+				.feature.wow.fadeInUp(data-wow-delay="0.3s")
 					.feature-icon
 						img(alt="" src="img/graph.svg" width="65" height="65")
-					h4.feature-count 12
+					h4.feature-count.js-counter 12
 					p лет на рынке #[br] услуг
-				.feature
+				.feature.wow.fadeInUp(data-wow-delay="0.6s")
 					.feature-icon
 						img(alt="" src="img/bag-blue.svg" width="65" height="65")
-					h4.feature-count 2000
+					h4.feature-count.js-counter 2000
 					p и более проектов #[br] по всему миру
-				.feature
+				.feature.wow.fadeInUp(data-wow-delay="0.9s")
 					.feature-icon
 						img(alt="" src="img/people-down.svg" width="65" height="65")
-					h4.feature-count 25 000
+					h4.feature-count.js-counter 25 000
 					p человек #[br] на одном #[br] мероприятии
-				.feature
+				.feature.wow.fadeInUp(data-wow-delay="1.2s")
 					.feature-icon
 						img(alt="" src="img/globe-mark.svg" width="65" height="65")
-					h4.feature-count 50
+					h4.feature-count.js-counter 50
 					p стран, где мы #[br] работаем
-				.feature
+				.feature.wow.fadeInUp(data-wow-delay="1.5s")
 					.feature-icon
 						img(alt="" src="img/list.svg" width="65" height="65")
-					h4.feature-count 30
+					h4.feature-count.js-counter 30
 					p договоров #[br] на годовое #[br] обслуживание			
 	// end FEATURES
 	// start mice department
-	section.mice-department#mice-department(data-parallax="scroll" data-image-src="img/mice-bg.jpg")
+	section.mice-department.wow#mice-department(data-wow-offset="200" data-parallax="scroll" data-image-src="img/mice-bg.jpg")
 		.container
 			h2 #[span Mice] департамент
 			.mice-group
-				img.globe-big(src="img/globe-big.png")
+				img.globe-big(src="img/globe-big.png" data-wow-offset="200" data-wow-delay="3.4s")
 				.mice-group-left
-					.mice-block
+					.mice-block(data-wow-delay="1s" data-wow-offset="200")
 						.icon
 							img(alt="" src="img/map.svg" width="108" height="56")
 						h3 Деловые мероприятия #[br] в России
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
-					.mice-block
+					.mice-block(data-wow-delay="2.2s" data-wow-offset="-400")
 						.icon
 							img(alt="" src="img/globe.svg" width="66" height="66")
 						h3 Деловые мероприятия #[br] в России
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
 				.mice-group-right
-					.mice-block
+					.mice-block(data-wow-delay="1.6s" data-wow-offset="200")
 						.icon
 							img(alt="" src="img/heart.svg" width="108" height="56")
 						h3 Интенсив #[br] поездки
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh laoreet dolore magna...
-					.mice-block
+					.mice-block(data-wow-delay="2.8s" data-wow-offset="-400")
 						.icon
 							img(alt="" src="img/prize.svg" width="79" height="74")
 						h3 Наши #[br] награды
@@ -186,15 +185,15 @@ block content
 		.container
 			h2 #[span Event] департамент
 			.event-advantages
-				img(alt="" src="img/infinity.svg" class="event-department-img")
+				img.first.wow.zoomIn(alt="" src="img/infinity.svg" class="event-department-img")
 				.event-advantages-group
-					.event-advantage.first
+					.event-advantage.first.wow.zoomIn
 						img(alt="" src="img/group.svg" width="85" height="70")
-						h3 25 000
+						h3 #[span.js-counter 25 000]
 						p человек на одном мероприятии
-					.event-advantage.second
+					.event-advantage.second.wow.zoomIn
 						img(alt="" src="img/bag-white.svg" width="85" height="62")
-						h3 2000
+						h3 #[span.js-counter 2000]
 						p реализованных проектов
 			.events
 				.single-event
@@ -281,17 +280,17 @@ block content
 				.contact-left
 					a.logo
 						img(alt="" src="img/logo.svg" width="224" height="77")
-					nav.links
-						a(href="#") MICE
-						a(href="#") EVENT
-						a(href="#") Корпоративные мероприятия
-						a(href="#") Юбилеи компании
-						a(href="#") Тимбилдинги
-						a(href="#") Детские праздники
-						a(href="#") Семинары
-						a(href="#") Презентации
-						a(href="#") Выездные конференции
-						a(href="#") Инсентив поездки
+					.worktypes
+						span MICE
+						span EVENT
+						span Корпоративные мероприятия
+						span Юбилеи компании
+						span Тимбилдинги
+						span Детские праздники
+						span Семинары
+						span Презентации
+						span Выездные конференции
+						span Инсентив поездки
 				.contact-right
 					img(alt="" src="img/paperplane.png")
 					h3 Наши контакты

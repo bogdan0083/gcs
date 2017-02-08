@@ -180,6 +180,7 @@
 			a
 				color: $blue-dark
 				display: block
+				text-decoration: none
 		&-top
 			position: relative
 			padding-left: 100px
@@ -242,7 +243,7 @@
 		padding-bottom: 17%
 	+rmin(1100)
 		width: 20%
-		padding-bottom: 13.6%	
+		padding-bottom: 13.3%	
 	img
 		display: block
 		width: 100%
@@ -318,6 +319,7 @@
 			font-size: 50px
 	p
 		font-size: 15px
+		margin-top: 10px
 		+rmin(800)
 			font-size: 18px
 
@@ -553,26 +555,27 @@
 	text-align: center		
 	color: #fff
 	+rmin(800)
-		padding: 70px 0
+		padding: 70px 0 46px
 	+clr()
 	a
 		color: white
-	.links
+	.worktypes
 		margin-top: 14px
-	.links a 
+	.worktypes span
 		transition: all 0.3s
 		color: #929da8
 		display: inline-block
 		padding: 8px
 		text-decoration: none
-		&:hover
-			color: #fff 
+		+rmin(800)
+			padding: 4px 9px 4px 8px
+			font-size: 17px
 	&-left
 		+rmin(800)
 			float: left
 			text-align: left
-			width: 340px
-			margin-top: 18px
+			width: 344px
+			margin-top: 14px
 	&-block
 		margin: 10px 0		
 	&-right
@@ -580,13 +583,14 @@
 		max-width: 250px
 		margin: 20px auto
 		h3
-			text-transform: uppercase
 			font-weight: 400
+			font-size: 32px
 		+rmin(800)
 			float: right
 			font-size: 20px
 			max-width: 400px
 			text-align: left
+			margin-top: -22px
 			h3
 				margin-top: 6px
 		+rmin(1000)
@@ -620,10 +624,12 @@ address
 	background-color: #30373e
 	text-align: center
 	padding: 20px
-	font-size: 14px
+	font-size: 12px
 	+rmin(800)
 		padding: 0
 		height: 67px
+		.container
+			max-width: 1065px
 
 .copyright
 	opacity: 0.6
