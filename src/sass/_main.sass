@@ -91,6 +91,7 @@
 	padding-top: 140px
 	padding-bottom: 30px
 	text-align: center
+	background-color: #293236
 	background-repeat: no-repeat
 	background-size: cover
 	background-attachment: local
@@ -201,7 +202,7 @@
 // projects
 .projects
 	text-align: center
-	padding-top: 13px
+	padding-top: 0
 	h3
 		font-size: 29px
 		margin-bottom: 22px
@@ -263,7 +264,7 @@
 		top: 0
 		left: 0
 		width: 100%
-		height: 100%
+		height: 101%
 		background-color: rgba(#394a58, 0.78)
 		opacity: 0
 		transition: all 0.3s
@@ -302,7 +303,7 @@
 		text-align: center
 		font-weight: 400
 		text-transform: uppercase
-		padding: 10px 0
+		padding: 12px 0 10px
 		font-size: 27px
 		position: relative
 		z-index: 10
@@ -685,19 +686,15 @@ a.go-top
 // 
 .gcs-popup
 	border: 1px solid gray
-	min-height: 600px
 	max-width: 977px
 	position: relative
 	overflow: hidden
-	// max-height: 908px
+	min-height: 400px
 	margin: 0 auto
 	padding: 20px 0
 	background-color: #FFF
 	transition: all 0.4s
 	opacity: 0
-	&-inner
-		overflow-x: hidden
-		max-height: 700px
 	&-nav
 		position: absolute
 		right: 10px
@@ -708,7 +705,7 @@ a.go-top
 			&:hover
 				opacity: 0.6
 		+rmin(800)
-			right: 40px
+			right: 20px
 	h3
 		color: #00b3be
 		font-size: 18px
@@ -754,9 +751,13 @@ a.go-top
 		vertical-align: top
 		margin: 20px -3px 10px 0
 		max-width: 200px
+		padding-right: 5px
+		text-align: center
 		+rmin(800)
 			width: auto
 			margin-right: 60px
+			padding-right: 10px
+			text-align: left
 			&.share
 				margin-right: -100px
 		h4

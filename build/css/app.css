@@ -3655,6 +3655,7 @@ template {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
+  padding: 10px;
   text-align: left;
   z-index: 1045;
 }
@@ -3994,17 +3995,26 @@ img.mfp-img {
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
-  transition: all 0.15s ease-out;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  transition: all 0.3s ease-out;
 }
 
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
   opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 /*************** SCROLLBAR BASE CSS ***************/
@@ -5102,6 +5112,7 @@ img {
   padding-top: 140px;
   padding-bottom: 30px;
   text-align: center;
+  background-color: #293236;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: local;
@@ -5191,7 +5202,7 @@ img {
 
 .projects {
   text-align: center;
-  padding-top: 13px;
+  padding-top: 0;
 }
 
 .projects h3 {
@@ -5274,7 +5285,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: rgba(57, 74, 88, 0.78);
   opacity: 0;
   transition: all 0.3s;
@@ -5322,7 +5333,7 @@ img {
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding: 12px 0 10px;
   font-size: 27px;
   position: relative;
   z-index: 10;
@@ -5672,20 +5683,15 @@ a.go-top:after {
 
 .gcs-popup {
   border: 1px solid gray;
-  min-height: 600px;
   max-width: 977px;
   position: relative;
   overflow: hidden;
+  min-height: 400px;
   margin: 0 auto;
   padding: 20px 0;
   background-color: #FFF;
   transition: all 0.4s;
   opacity: 0;
-}
-
-.gcs-popup-inner {
-  overflow-x: hidden;
-  max-height: 700px;
 }
 
 .gcs-popup-nav {
@@ -5745,6 +5751,8 @@ a.go-top:after {
   vertical-align: top;
   margin: 20px -3px 10px 0;
   max-width: 200px;
+  padding-right: 5px;
+  text-align: center;
 }
 
 .gcs-popup-block h4 {
@@ -5778,6 +5786,9 @@ a.go-top:after {
 }
 
 @media only screen and (min-width: 800px) {
+  .mfp-content {
+    padding: 30px;
+  }
   body {
     font-size: 16px;
   }
@@ -6060,7 +6071,7 @@ a.go-top:after {
     float: right;
   }
   .gcs-popup-nav {
-    right: 40px;
+    right: 20px;
   }
   .gcs-popup-slider {
     height: 398px;
@@ -6081,6 +6092,8 @@ a.go-top:after {
   .gcs-popup-block {
     width: auto;
     margin-right: 60px;
+    padding-right: 10px;
+    text-align: left;
   }
   .gcs-popup-block.share {
     margin-right: -100px;
