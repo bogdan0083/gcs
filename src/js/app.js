@@ -13,6 +13,7 @@ $(document).ready(function() {
         e.preventDefault();
         $navTrigger.toggleClass('js-active');
         $mainNav.slideToggle();
+        $('.header').toggleClass('js-painted');
     });
 
     // Подсвечивание активного пункта меню на ховер

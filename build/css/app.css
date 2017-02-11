@@ -4989,12 +4989,6 @@ img {
   background-color: #2a3337;
 }
 
-.block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header {
   background-color: rgba(0, 0, 0, 0.36);
   text-align: center;
@@ -5482,6 +5476,10 @@ img {
   font-size: 14px;
 }
 
+.single-event:last-child {
+  width: 100%;
+}
+
 .single-event .icon {
   position: relative;
   height: 70px;
@@ -5750,7 +5748,6 @@ a.go-top:after {
   margin-right: -3px;
   vertical-align: top;
   margin: 20px -3px 10px 0;
-  max-width: 200px;
   padding-right: 5px;
   text-align: center;
 }
@@ -5783,6 +5780,13 @@ a.go-top:after {
 
 .gcs-popup-single .gcs-popup-block.share, .gcs-popup-news .gcs-popup-block.share {
   margin: 20px 0;
+}
+
+@media only screen and (min-width: 460px) {
+  .projects-item {
+    width: 50%;
+    padding-bottom: 30%;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -5889,25 +5893,18 @@ a.go-top:after {
     padding-bottom: 30px;
   }
   .welcome-block {
-    max-width: 385px;
+    max-width: 330px;
     float: left;
   }
   .welcome-block:last-child {
     float: right;
   }
   .projects-item {
-    width: 25%;
-    padding-bottom: 17%;
-  }
-  .features-group {
-    margin: 0 -50px;
-    padding: 56px 0 40px;
+    width: 33.3333%;
+    padding-bottom: 22%;
   }
   .features h2 {
     padding: 22px 0 18px;
-  }
-  .feature {
-    width: 20%;
   }
   .feature-count {
     font-size: 50px;
@@ -5917,6 +5914,7 @@ a.go-top:after {
   }
   .mice-department {
     padding-bottom: 60px;
+    padding-top: 40px;
   }
   .mice-department .globe-big {
     display: inline-block;
@@ -6091,6 +6089,7 @@ a.go-top:after {
   }
   .gcs-popup-block {
     width: auto;
+    max-width: 200px;
     margin-right: 60px;
     padding-right: 10px;
     text-align: left;
@@ -6136,6 +6135,16 @@ a.go-top:after {
 }
 
 @media only screen and (min-width: 880px) {
+  .welcome-block {
+    max-width: 385px;
+  }
+  .features-group {
+    margin: 0 -50px;
+    padding: 56px 0 40px;
+  }
+  .feature {
+    width: 20%;
+  }
   .gcs-popup h3 {
     max-width: 686px;
     margin-left: auto;
@@ -6150,6 +6159,9 @@ a.go-top:after {
     width: auto;
     max-width: 100%;
     margin-top: 40px;
+  }
+  .single-event:last-child {
+    width: 20%;
   }
   .single-event {
     width: 20%;
