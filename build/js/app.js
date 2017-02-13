@@ -38,16 +38,22 @@ $(document).ready(function() {
     // Portfolio filter
     // 
     $('.projects-gallery').imagesLoaded(function() {
-        var filterizd = $('.projects-gallery').filterizr({
-            animationDuration: 0.3, //in seconds
-            filterOutCss: { //Filtering out animation
-                opacity: 0,
-                transform: 'scale(0.5)'
-            },
-            filterInCss: { //Filtering in animation
-                opacity: 1,
-                transform: 'scale(1)'
-            }
+        var $grid = $('.projects-gallery').isotope({
+            itemSelector: '.projects-item',
+            layoutMode: 'fitRows',
+        });
+
+        // bind filter button click
+        $('.projects-filter').on( 'click', 'a', function(e) {
+            e.preventDefault();
+            var filterValue = $( this ).attr('data-filter');
+            // use filterFn if matches value
+            //filterValue = filterFns[ filterValue ] || filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
+
+        $grid.on( 'layoutComplete', function() {
+            $(window).trigger('resize');
         });
     });
     // ---------------------------------------------
@@ -61,7 +67,6 @@ $(document).ready(function() {
         callback: function(box) {
             // body...
             if ($(box).hasClass('mice-department')) {
-            	console.log($(box));
             	$(box).find('.mice-block').addClass('animated zoomIn');
             	$(box).find('.globe-big').addClass('animated zoomIn');
             };
@@ -89,14 +94,14 @@ $(document).ready(function() {
     //
     // remove default event on click;
 
-    var $filterLinks = $('.projects-filter a');
+    // var $filterLinks = $('.projects-filter a');
 
-    $filterLinks.on('click', function(e) {
-        e.preventDefault();
+    // $filterLinks.on('click', function(e) {
+    //     e.preventDefault();
 
-        $filterLinks.removeClass('js-active');
-        $(this).addClass('js-active');
-    });
+    //     $filterLinks.removeClass('js-active');
+    //     $(this).addClass('js-active');
+    // });
 
     // --------------------------------
     //
@@ -110,7 +115,6 @@ $(document).ready(function() {
     $('.news-item-slider img').click(function(e) {
         // body...
         e.preventDefault();
-        console.log($(this).closest('.news-item-slider'));
         $(this).closest('.news-item-slider').slick('slickNext');
     });
     // ------------------------------------------------------
@@ -155,7 +159,7 @@ $(document).ready(function() {
             position: myLatLng,
             map: map,
             title: 'Hello World!',
-            icon: '/img/marker.png'
+            icon: './img/marker.png'
         });
     }
 
